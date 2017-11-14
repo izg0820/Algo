@@ -1,0 +1,8 @@
+﻿  SavingInk.c
+c:\users\이재현\documents\visual studio 2017\projects\saving ink\saving ink\savingink.c(18): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+c:\users\이재현\documents\visual studio 2017\projects\saving ink\saving ink\savingink.c(22): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+c:\users\이재현\documents\visual studio 2017\projects\saving ink\saving ink\savingink.c(16): warning C4101: 'temp' :참조되지 않은 지역 변수입니다.
+  saving Ink.vcxproj -> C:\Users\이재현\documents\visual studio 2017\Projects\saving Ink\Debug\saving Ink.exe
+  saving Ink.vcxproj -> C:\Users\이재현\documents\visual studio 2017\Projects\saving Ink\Debug\saving Ink.pdb (Partial PDB)
