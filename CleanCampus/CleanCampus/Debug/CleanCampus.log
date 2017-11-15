@@ -1,0 +1,14 @@
+﻿  cleanCampus.c
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(29): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(31): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(33): warning C4996: 'scanf': This function or variable may be unsafe. Consider using scanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  c:\program files (x86)\windows kits\10\include\10.0.14393.0\ucrt\stdio.h(1269): note: 'scanf' 선언을 참조하십시오.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(60): warning C4244: '=': 'double'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(61): warning C4244: '함수': 'float'에서 'int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(61): warning C4244: '=': 'int'에서 'float'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(72): warning C4047: '함수': 'int'의 간접 참조 수준이 'int [100]'과(와) 다릅니다.
+c:\users\이재현\documents\visual studio 2017\projects\cleancampus\cleancampus\cleancampus.c(72): warning C4024: 'sort': 형식 및 실제 매개 변수 1의 형식이 서로 다릅니다.
+  CleanCampus.vcxproj -> C:\Users\이재현\documents\visual studio 2017\Projects\CleanCampus\Debug\CleanCampus.exe
+  CleanCampus.vcxproj -> C:\Users\이재현\documents\visual studio 2017\Projects\CleanCampus\Debug\CleanCampus.pdb (Partial PDB)
