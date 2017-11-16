@@ -24,7 +24,7 @@ void main() {
 
 	int test_case = 0;
 	int node_count = 0;
-	int set, first, second, third;
+	int set, first, second, third, start;
 	C *p;
 	C min;
 
@@ -45,10 +45,10 @@ void main() {
 		first = angle[0][1]; second = angle[1][1]; third = angle[2][1];
 		push(p[first]); push(p[second]); push(p[third]);
 
-		for (int r = 3; r <= node_count; r++) {
-			ccw(p, r);
+		for (int k = 3; k <= node_count; k++) {
+			ccw(p, k);
 		}
-		calculate_length();
+		calculate_length(min);
 	}
 }
 
@@ -72,12 +72,17 @@ int calculate_angle(C *p, C min, int node_count) {
 		else {
 			dx = sqrt(pow((p[i].x - min.x), 2) + pow((p[i].y - min.y), 2));
 			dy = abs(p[i].x - min.x);
-			angle[set][0] = (dy / dx);
-			angle[set++][1] = i;
+			if (p[i].x >= min.x) {
+				angle[set][0] = (dy / dx);
+				angle[set++][1] = i;
+			}
+			else {
+				angle[set][0] = -1 * (dy / dx);
+				angle[set++][1] = i;
+			}
 		}
 	}
-
-	angle[set][0] = -1;
+	angle[set][0] = -2;
 	angle[set++][1] = temp;
 	return set;
 }
@@ -92,7 +97,7 @@ C find_min(C *p, int edge) {
 	C min = p[1];
 
 	for (int i = 2; i <= edge; i++) {
-		if ((min.y > p[i].y) && (min.x > p[i].x))
+		if ((min.y > p[i].y) || (min.x > p[i].x))
 			min = p[i];
 	}
 	return min;
@@ -137,10 +142,11 @@ int ccw(C p[], int r)
 
 	if (res > 0)
 		push(p[c]);
-	else if (res < 0)
+	else if (res < 0) 
 		pop();
 	else if (res == 0)
-		return 0;
+		push(p[c]);
+
 }
 
 /*purpose: push in stack
@@ -166,15 +172,9 @@ output:none
 void calculate_length()
 {
 	double result = 0;
-
+	
 	for (int i = 0; i < top; i++) {
-		if (i + 1 == top) {
-			result = result + sqrt(pow(stack[i].x - stack[0].x, 2) + pow(stack[i].y - stack[0].y, 2));
-		}
-		else {
 			result = result + sqrt(pow(stack[i + 1].x - stack[i].x, 2) + pow(stack[i + 1].y - stack[i].y, 2));
-		}
 	}
-
 	printf("\n%.2lf\n", result + 2);
 }
