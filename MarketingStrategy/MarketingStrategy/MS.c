@@ -58,10 +58,10 @@ float closest_pair(coordinate* c, int l, int r)
 	}
 	
 		if ((l + r) % 2 == 0) {
-			q = (1 + r) / 2;
+			q = (l+ r) / 2;
 		}
 		else
-			q = (1 + r) / 2 + 1;
+			q = (l + r) / 2 + 1;
 		
 		dl = closest_pair(c, l, q - 1);
 		dr = closest_pair(c, q, r);
@@ -151,6 +151,3 @@ output: sorted structure array
 	}
 	return c;
 }
-
-
-
